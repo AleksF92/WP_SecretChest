@@ -1,0 +1,162 @@
+/*
+Theme Name: Secret Chest
+Author: LediiNet Software
+Author URI: http://www.ledii.net/
+Version: 2.0
+*/
+
+
+
+/* Initialize */
+:root {
+	--colorBodyPrimary: #2E8835;
+	--colorBodySecondary: #2A753F;
+	--colorArticle: rgba(0, 0, 0, 0.5);
+	--colorText: #FFFFFF;
+	--colorSCBlue: #0031E4;
+	--colorSCYellow: #E6EA00;
+}
+
+@font-face {
+	font-family: ubuntu;
+	src: url('fonts/caviar_dreams_bold.ttf');
+	font-weight: normal;
+}
+
+
+
+/* Header */
+header {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header img {
+	width: 100%;
+}
+
+header nav {
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+header nav ul {
+	display: block;
+	padding: 0px;
+	margin: 0px;
+	float: left;
+}
+
+header nav li {
+	float: left;
+	display: block;
+}
+
+header nav a {
+	display: block;
+	width: 100%;
+	height: 24px;
+	padding-top: 6px;
+	font-family: ubuntu;
+	text-align: center;
+	text-decoration: none;
+	color: var(--colorSCBlue);
+	border: 2px solid var(--colorSCBlue);
+	background-color: var(--colorSCYellow);
+}
+
+header nav a:hover {
+	background-color: #7F8200;
+	color: white;
+}
+
+header nav .col-news {
+	width: 10%;
+	margin-right: 50px;
+}
+header nav .col-news li {
+	width: 100%;
+}
+header nav .col-news a {
+	*background-color: white;
+}
+
+header nav .col-pages {
+	width: 40%;
+	margin-right: 50px;
+}
+header nav .col-pages li {
+	width: 25%;
+}
+header nav .col-pages a {
+	*background-color: lightgreen;
+}
+
+header nav .col-about {
+	width: 10%;
+	margin-right: 100px;
+}
+header nav .col-about li {
+	width: 100%;
+}
+header nav .col-about a {
+	*background-color: lightblue;
+}
+
+header nav .col-links {
+	width: 20%;
+}
+header nav .col-links li {
+	width: 50%;
+}
+header nav .col-links li:first-of-type a {
+	background-color: #3B5998;
+	border-color: white;
+	color: white;
+}
+header nav .col-links li:nth-of-type(2) a {
+	background-color: #E62117;
+	border-color: white;
+	color: white;
+}
+
+
+
+/* Body */
+body {
+	/* Set background and default text color */
+	color: var(--colorText);
+	background: repeating-linear-gradient(var(--colorBodyPrimary), var(--colorBodySecondary) 15%, var(--colorBodyPrimary) 30%);
+	min-height: 1000px;
+}
+
+article {
+	/* Draw article frame */
+	background-color: var(--colorArticle);
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+article p {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+iframe {
+	/* Autoscale videos */
+	max-width: 100%;
+	width: 100%;
+}
+
+
+
+/* Footer */
+footer {
+	/* Center footer text */
+	text-align: center;
+}
